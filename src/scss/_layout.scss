@@ -1,7 +1,44 @@
-.container{
-  width: 1180px;
-  min-height: 1605px;
-  margin: 0 auto;
+.report{
+  .container{
+    width: 1180px;
+    min-height: 1605px;
+    margin: 0 auto;
+  }
+  header, .header{
+    @include setCont(1180px, 45px, block, relative);
+    line-height: 45px;
+    background-color: #E8E8E8;
+    margin: 0 auto;
+    .h_inner{
+      padding: 0 40px;
+      h1{
+        font-size: 18px;
+        color: #111111;
+        font-family: 'SpoqaHanSansNeo-Bold';
+      }
+      .h_right{
+        @include setCont(248px, 30px, flex, absolute);
+        right: -110px;
+        top: 109px;
+        font-size: 14px;
+        text-align: center;
+        color: $white;
+        line-height: 30px;
+        transform: rotate(-90deg);
+        p{
+          @include setCont(203px, 30px);
+          background-color: $blue;
+        }
+        span{
+          @include setCont(45px, 30px);
+          background-color: #F8B300;
+          em{
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
 }
 
 .covera, .coverb{
@@ -16,38 +53,4 @@
   text-align: center;
 }
 
-header{
-  @include setCont(1180px, 45px, block, relative);
-  line-height: 45px;
-  background-color: #E8E8E8;
-  margin: 0 auto;
-  .h_inner{
-    padding: 0 40px;
-    h1{
-      font-size: 18px;
-      color: #111111;
-      font-family: 'SpoqaHanSansNeo-Bold';
-    }
-    .h_right{
-      @include setCont(248px, 30px, flex, absolute);
-      right: -110px;
-      top: 109px;
-      font-size: 14px;
-      text-align: center;
-      color: $white;
-      line-height: 30px;
-      transform: rotate(-90deg);
-      p{
-        @include setCont(203px, 30px);
-        background-color: $blue;
-      }
-      span{
-        @include setCont(45px, 30px);
-        background-color: #F8B300;
-        em{
-          transform: rotate(90deg);
-        }
-      }
-    }
-  }
-}
+

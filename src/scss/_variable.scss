@@ -1,13 +1,12 @@
 /*URL*/
 //$url: "/img/";
-$url: "../img/";
-$font_url :"../font/";
+$font_url: "https://s3.ap-northeast-2.amazonaws.com/static.unicornranch.co.kr/common/font";
 /*Hashing*/
 $version: "?v=1";
 
 
 /*Font 및 Color*/
-$family: 'SpoqaHanSansNeo-Bold','SpoqaHanSansNeo-Regular', "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, "돋음",'AppleGothic', 'Arial', 'Meiryo', 'sans-serif';
+$family: "SpoqaHanSansNeo-Bold","SpoqaHanSansNeo-Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, "돋음",'AppleGothic', 'Arial', 'Meiryo', 'sans-serif';
 $white: #ffffff;
 $black: #333333;
 $gray: #555555;
